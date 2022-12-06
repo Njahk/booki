@@ -1,0 +1,531 @@
+/**
+ * fichier desktop.css
+ * 
+ * fichier contenant les propriétés css générales et spécifiques au desktop (desktop first)
+ * 
+ * @author: njah kevin;
+ * @version: 1.0;
+ * @date: 2022-08;
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,700&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: "raleway";
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+nav a{
+	padding: 2.5rem;
+	padding-top: 35px;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin-top: -7px;
+}
+
+nav a:hover{
+	border-top: 3px solid blue ;
+	color: #0065fc;
+}
+
+#logo{
+	margin-right: auto;
+	padding: 0 2rem;
+	height: 3rem;
+    margin-top: 2.1rem;
+    margin-bottom: 1.6rem;
+}
+
+	/*partie recherche*/
+	
+
+.recherche{
+	margin-left: 20px;
+}
+
+.recherche > h1,.recherche > p{
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.recherche h1{
+	font-size: 22px;
+}
+
+	/*bare de recherche*/
+
+.barre-de-recherche{
+	display: flex;
+	margin-bottom: 1.5rem;
+}
+
+.barre-de-recherche .fa-location-dot{
+	padding: 1rem;
+	background-color: #f2f2f2;
+	border-radius: 1rem 0 0 1rem;
+}
+.fa-magnifying-glass{
+	display: none;
+}
+
+.barre-de-recherche input{
+	padding-right: 5rem;
+	border: 1px solid #f2f2f2;
+}
+
+.barre-de-recherche input:focus{
+	background-color: #f2f2f2;
+}
+
+.barre-de-recherche input::placeholder{
+	font-size: 1.2rem;
+}
+
+.barre-de-recherche button{
+	background-color: #0065fc;
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 0 0.5rem;
+	border-radius: 0 1rem 1rem 0;
+	border: none;
+	cursor: pointer;
+}
+
+.barre-de-recherche button :hover{
+	border: 1px solid transparent;
+}
+
+		/*filtre*/
+
+.liste-filtrer{
+	display: flex;
+	align-items: center;
+	grid-gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.liste-filtrer a{
+	border-radius: 20px;
+	padding: 10px 0 10px 0;
+}
+
+.liste-filtrer a:hover{
+	background-color: #f2f2f2;
+}
+
+.fa-solid.fa-money-bill-wave{
+	color: blue;
+	background-color: #deebff;
+	padding: 1rem;
+	border-radius: 50%;
+	margin: -3px;
+}
+
+.fa-solid.fa-child-reaching{
+	color: blue;
+	background-color: #deebff;
+	padding: 1rem;
+	border-radius: 50%;
+	margin: -3px;
+}
+
+.fa-solid.fa-heart{
+	color: blue;
+	background-color: #deebff;
+	padding: 1rem;
+	border-radius: 50%;
+	margin: -3px;
+}
+
+.fa-solid.fa-dog{
+	color: blue;
+	background-color: #deebff;
+	padding: 1rem;
+	border-radius: 50%;
+	margin: -3px;
+}
+
+.filtre{
+	border: solid lightgray;
+	border-radius: 2rem;
+}
+
+.liste-filtrer span{
+	font-weight: bold;
+	padding: 1rem;
+}
+
+		/*résultat des recheches*/
+
+.resultat-recherche{
+	display: flex;
+	align-items: center;
+	grid-gap: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.resultat-recherche .fa-solid{
+	color: blue;
+	width: 2rem;
+	height: 2rem;
+	border: 1px solid lightgray;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+		/*les photos*/
+
+.carte{
+	display: flex;
+	align-items: center;
+	margin: 2rem 0 4rem 0;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.Marseille{
+	background-color: #f2f2f2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-basis: 67%;
+	grid-gap: 2rem;
+	border-radius: 1rem;
+}
+
+.Marseille img{
+	border-radius: 1rem 1rem 0 0;
+	height: 7rem;
+	width: 100%;
+}
+
+.Marseille h2{
+	flex-basis: 100%;
+	padding: 0rem 0 0 3rem;
+	margin: 2.3rem 0 0 0;
+}
+
+.Marseille h3{
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	margin-left: 48px;
+}
+
+.hebergements{
+	padding: 0.5rem;
+	background-color: white;
+	border-radius: 25px;
+	width: 28%;
+	box-shadow: 5px 5px 10px lightgray;
+	margin-left: -5px;
+}
+
+.hebergements :hover{
+	border-left: 5px solid transparent;
+}
+
+.hebergements h4{
+	margin: 0;
+}
+
+.hebergements p{
+	margin: 2px
+}
+
+.notation{
+	color:#f2f2f2 ;
+}
+.notation-on{
+	color: #0065fc;
+}
+
+.photos p{
+	margin: 0;
+}
+
+
+
+		/*populaire*/
+
+
+
+.populaire{
+	background-color: #f2f2f2;
+	flex-basis: 28%;
+	border-radius: 1rem;
+}
+
+
+.hebergement-populaire:hover{
+	border-top: 8px solid transparent;
+}
+
+.hebergement-populaire{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.hebergement-populaire img{
+	height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    width: 45%;
+    padding: 7px;
+}
+
+.description{
+	flex-basis: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 6px;
+}
+
+
+.description p{
+	margin: 0;
+	padding: 0;
+	flex: 1;
+}
+
+.description .notation{
+	flex: 2;
+	display: table;
+	width: 40%;
+}
+
+.notation > i{
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.description h3{
+	margin: 0;
+}
+
+.description h4{
+	margin: 0;
+	flex: 1;
+	padding-bottom: 5px;
+}
+
+
+.populaire h2{
+	display: inline-block;
+	width: 80%;
+	margin: 6%;
+	margin-right: 0;
+}
+
+.populaire .star{
+	display: inline-block;
+	width: 19%;
+	text-align: right;
+	margin-right: 1rem;
+}
+
+.hebergement-populaire{
+	background-color: white;
+	width: 80.5%;
+	margin-left: 37px;
+	box-shadow:10px 10px 10px lightgray;
+	border-radius: 1rem;
+	height: 9.2rem;
+}
+
+
+
+
+			/*Activité*/
+			
+
+
+.Activites{
+	display: flex;
+	margin-bottom: 4rem;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.Activites h2{
+	flex-basis: 100%;
+	margin: 30px 0 25px 29px;
+}
+
+.Activites a:hover{
+	border-left: 5px solid transparent;
+}
+
+.Activites img{
+	height: 12rem;
+}
+
+
+
+		/*vieux port*/
+
+
+.vieux-port img{
+	height: 24rem;
+	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+	object-fit: cover;
+}
+
+.vieux-port{
+	height: 27.5rem;
+	width: 21.5%;
+	border-radius: 1rem;
+	box-shadow: 6px 6px 6px #f2f2f2;
+}
+
+.Activites p{
+	margin-left: 1rem ;
+}
+
+		/*double image du millieu*/
+
+
+.double-images-millieu{
+	height: 27.5rem;
+	width: 21.5%;
+	border-radius: 1rem;
+}
+
+
+		/*fort de pomègues*/
+
+
+.fort-de-pomegues img{
+	height: 10rem;
+	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+	object-fit: cover;
+}
+
+.fort-de-pomegues{
+	border-radius: 1rem;
+	box-shadow: 6px 6px 6px #f2f2f2;
+	height: 14rem;
+}
+
+
+			/*ill du frioul*/
+
+
+
+.ill-du-frioul img{
+	height: 7rem;
+	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+	object-fit: cover;
+}
+
+.ill-du-frioul{
+	border-radius: 1rem;
+	box-shadow: 6px 6px 6px #f2f2f2;
+	margin-top: 3rem;
+	height: 11rem;
+}
+
+			/*Parc National des Calanques*/
+
+
+.Parc-National-des-Calanques img{
+	height: 24rem;
+	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+	object-fit: cover;
+}
+
+.Parc-National-des-Calanques{
+	height: 27.5rem;
+	width: 21.5%;
+	border-radius: 1rem;
+	box-shadow: 6px 6px 6px #f2f2f2;
+}
+
+			/*double images fin*/
+
+.double-images-fin{
+	height: 27.5rem;
+	width: 21.5%;
+	border-radius: 1rem;
+}
+
+		/*Notre-Dame-de-la-Garde*/
+
+
+.Notre-Dame-de-la-Garde img{
+	height: 8rem;
+	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+	object-fit: cover;
+}
+
+.Notre-Dame-de-la-Garde{
+	border-radius: 1rem;
+	box-shadow: 6px 6px 6px #f2f2f2;
+	height: 12.8rem;	
+}
+
+			/*Parc Longchamp*/
+
+
+.Parc-Longchamp img{
+	height: 8.5rem;
+	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+	object-fit: cover;
+	margin-top: 3rem;
+}
+
+.Parc-Longchamp{
+	border-radius: 1rem;
+	box-shadow: 6px 6px 6px #f2f2f2;
+	height: 15rem;
+}
+
+		/*FOOTER*/
+
+
+footer{
+	display: flex;
+ 	justify-content: space-between;
+ 	background-color: #f2f2f2;
+ 	height: 13rem;
+ 	margin: 0 3.5rem -1rem -2rem;
+ 	width: 100%;
+}
+
+footer p:hover{
+	border-top: 1px solid transparent;
+	background-color: lightblue;
+}
+
+.text-un {
+	margin-left: 3rem;
+}
+
+.text-trois{
+	margin-right: 25rem;
+}

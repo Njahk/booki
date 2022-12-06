@@ -1,0 +1,262 @@
+/**
+ * fichier smartphone.css
+ * 
+ * fichier contenant les propriétés css spécifiques au smartphone (desktop first)
+ * 
+ * @author: njah kevin;
+ * @version: 1.0;
+ * @date: 2022-08;
+ */
+
+
+		/*header*/
+
+
+nav{
+	flex-wrap: wrap;
+}
+
+.sub-nav{
+		flex-basis: 100%;
+		padding: 2rem 0 1rem 0;
+		display: flex;
+		justify-content: center;
+}
+
+.sub-nav a{
+	text-align: center;
+	padding: inherit;
+	font-size: 21px;
+	border-bottom: 3px solid #f2f2f2;
+	width: 50%;
+	border-top: transparent;
+}
+
+.sub-nav a:hover{
+	border-bottom: 3px solid blue;
+	border-top-color: transparent;
+	padding-bottom: 10px;
+}
+
+.hebergement{
+	border-bottom: 3px solid blue;
+}
+
+#logo{
+	margin: 30px auto -12px;
+}
+
+		/*menu recherche*/
+
+
+.recherche h1{
+	font-size: 26px;
+}
+
+.logo-recherche{
+	display: none;
+	background-color: inherit;
+}
+
+.fa-magnifying-glass{
+	display: inline;
+	padding: 0.4rem;
+}
+
+.barre-de-recherche button{
+	border-radius: 14px;
+	margin: 0 0 0 -17px;
+	padding: 1rem;
+}
+
+.barre-de-recherche input{
+	padding-right: 7rem;
+}
+
+.barre-de-recherche .fa-location-dot{
+	padding: 1.5rem;
+}
+
+.liste-filtrer h2{
+	flex-basis: 100%;
+	margin: 0;
+}
+
+		/*hebergement populaires*/
+
+
+.populaire{
+	width: 100%;
+	border-radius: initial;
+}
+
+.hebergement-populaire{
+	margin-left: 13px;
+	width: 93%;
+    height: 179px;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.hebergement-populaire img {
+    height: 163px;
+    border-radius: 15px 0 0 15px;
+    width: 44%;
+    padding: 4px;
+}
+
+.description{
+	padding: 4px;
+}
+
+.populaire h2{
+	font-size: 30px;
+    padding: 30px 0 0 50px;
+    width: 81%;
+}
+
+.etoile-noire{
+	padding-left: 23px;
+}
+
+.fa-star:before {
+	height: 1rem;
+}
+
+		/*hebergement marseille*/
+
+
+.Marseille{
+	display: block;
+	width: 100%;
+	background-color: white;
+}
+
+.hebergements{
+	width: 98%;
+	margin-bottom: 18px;
+}
+
+.hebergements h4{
+	font-size: 20px;
+}
+
+.Marseille img{
+	height: 9rem;
+}
+
+.Marseille h2 {
+    margin-left: -39px;
+}
+
+.Marseille h3{
+	padding: 0;
+	font-size: 23px;
+}
+
+		/*activité*/
+
+
+.Activites{
+	display: block;
+}
+
+.vieux-port img {
+    height: 10rem;
+    width: 100%;
+}
+
+.vieux-port {
+    height: 14rem;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.ill-du-frioul img {
+    height: 10rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
+.double-images-millieu {
+    height: 14rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.fort-de-pomegues img {
+    height: 10rem;
+    width: 100%;
+}
+
+.fort-de-pomegues{
+	height: 14rem;
+	width: 100%;
+	margin-bottom: -28px;
+}
+
+.ill-du-frioul{
+	height: 14rem;
+	width: 100%;
+}
+
+.Parc-National-des-Calanques img {
+    height: 10rem;
+    width: 100%;
+}
+
+.Parc-National-des-Calanques {
+    height: 14rem;
+    width: 100%;
+    margin-top: 264px;
+}
+
+.double-images-fin{
+	height: 16rem;
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.Notre-Dame-de-la-Garde img {
+    height: 10rem;
+    width: 100%;
+}
+
+.Notre-Dame-de-la-Garde{
+	margin-top: 18px;
+	height: 14rem;
+	width: 100%;
+}
+
+
+.Parc-Longchamp img{
+	height: 10rem;
+	width: 100%;
+	margin-top: 0;
+}
+
+.Parc-Longchamp{
+	height: 14rem;
+	width: 100%;
+	margin-top: 18px;
+}
+
+
+			/*footer*/
+
+
+footer{
+	margin: 17rem 2rem -1rem 0;
+	display: block;
+	height: 23rem;
+}
+
+.text-deux {
+    margin-left: 3rem;
+    white-space: nowrap;
+}
+
+.text-trois{
+	margin-left: 3rem;
+}

@@ -1,0 +1,95 @@
+/**
+ * fichier tablet.css
+ * 
+ * fichier contenant les propriétés css spécifiques aux tablettes (desktop first)
+ * 
+ * @author: njah kevin;
+ * @version: 1.0;
+ * @date: 2022-08;
+ */
+
+
+nav{
+	flex-wrap: wrap;
+}
+.carte{
+	flex-direction: column;
+}
+
+			/*populaire*/
+
+
+
+.populaire{
+order: -1;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 90px;
+}
+
+.populaire h2{
+	display: inline-block;
+	width: 80%;
+	margin: 0;
+	padding: 30px 100px;
+}
+
+.etoile-noire{
+	font-size: 28px;
+	padding: 30px 15px;
+}
+
+.description{
+	padding: 12px 0;
+}
+
+.flex-populaire{
+	width: 100%;
+	margin: 0 40px 0;
+}
+
+
+			/*hebergement-Marseille*/
+
+
+.hebergement-populaire{
+	height: 193px;
+	width: 80%;
+	margin-left: 4rem;
+}
+
+.hebergement-populaire img {
+    height: 192px;
+    border-radius: 25px 0 0 25px;
+    width: 47%;
+    padding: 12px;
+}
+
+
+			/*footer*/
+
+
+
+footer{
+	margin:0 20px -8px 10px;
+	flex-wrap: wrap;
+	justify-content: initial;
+}
+
+.Activites p{
+	margin: 8px;
+}
+
+.text-un{
+	white-space: nowrap;
+}
+
+.text-deux{
+	margin-left: 120px;
+	white-space: nowrap;
+}
+
+.text-trois{
+	margin: 0 0 0 120px;
+	white-space: nowrap;
+}
